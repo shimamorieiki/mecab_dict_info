@@ -112,8 +112,8 @@ def main():
     hinsi_katuyou_dict: Dict[str, Set[str]] = get_hinsis_katuyou(path=path)
     for hinsi in hinsi_katuyou_dict:
         print(hinsi)
-        print(hinsi_katuyou_dict[hinsi][0])
-        print(hinsi_katuyou_dict[hinsi][1])
+        print(sorted(list(hinsi_katuyou_dict[hinsi][0])))
+        print(sorted(list(hinsi_katuyou_dict[hinsi][1])))
         print("\n")
 
 
